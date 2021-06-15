@@ -1,0 +1,882 @@
+*{
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: white;
+    font-family: poppins;
+    margin: 0;
+    
+}
+.example::-webkit-scrollbar {
+    display: none;
+  }
+
+.navbar{
+    position:fixed;
+    background: #007AF3;
+    padding: 0.2em 2em;
+    width: 90%;
+    z-index: 999;
+}
+.container .logo{
+    font-size: 1.6em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;    
+}
+.container .shield{
+    
+    font-weight: bold;
+    color: lightseagreen;
+    text-decoration: none;    
+}
+nav{
+    display: none;
+}
+
+.container{
+    display: flex;
+    place-content: space-between;
+}
+.mobile-menu{
+    cursor: pointer;
+    margin-right: 1em;
+}
+
+nav.menu-btn {
+    display: block;
+    padding-right: 0;
+}
+
+nav{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    right: 0;
+    top: 0;
+    background: #007AF3;
+    height: 40vh;
+    padding: 1em;
+}
+
+.nav1{
+    margin-top: 1.5em;
+    text-align: center;
+}
+.nav1 a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: .7em;
+    font-size: 1.1em;
+    text-align: center;
+
+}
+a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: .5em;
+    font-size: 1.2em;
+    text-align: center;
+
+}
+.nav1 a:hover{
+    font-weight: bold;
+    color: white;
+}
+.mobile-menu-exit{
+    float: right;
+    margin-top: 0.5em;
+    margin-right: 1.2em;
+    cursor: pointer;
+    
+}
+
+@media screen and (max-width: 768px){
+section{  
+    min-height: 100vh;
+    margin-bottom: 3em;
+}
+.hero-section{
+    padding-top: 2em;
+  background:#007AF3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;   
+}
+.content {
+    position: relative;
+    margin-top: 3em;
+}
+.content h1{ 
+  font-weight: bold;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+}
+.content h1 span{
+  color: lightseagreen;
+}
+.content .paragraph{
+    display : none;
+}
+.content .paragraph2{
+  color:white;
+  text-align: center;
+  font-size: .9em;
+  padding-top: .9em;
+  margin: 0em 4em;
+  
+}
+.content .btn{
+  color: #007AF3;
+  background: white;
+  margin: 1em auto;
+  width: 30%;
+  font-size: 1em;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.hero-section .image{
+  flex: 1 1 40rem;
+}
+.hero-section .image img{
+    display:block;
+    width: 80%;
+    margin:-1em auto 0em auto;
+
+}
+
+/* -------Symptom Section-------- */
+
+.symptom{
+    background: white;
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.symptom  img{
+    width: 80%;  
+    margin-left: 3em;
+}
+.symptom .details{
+    margin-top: 1.9rem ;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+.symptom .details h1{
+    font-weight: bold;
+    text-align: center;
+    color: #007AF3;
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+.details ul{
+    font-size: 1.1em;
+    padding-top: .5em;
+    padding-bottom: 1em;
+    font-weight: bold;
+} 
+.details img{
+    margin-left: 0;
+    width: 100%;
+}
+.details li{
+    font-size: .9em;
+    font-weight: 700;
+    color: #007AF3;
+}
+
+.details ul p{
+    color:lightseagreen;
+}   
+.details span{
+    color: lightseagreen;
+}
+.details .para1{
+   color: white;
+   font-size: .9em;
+   font-weight: bold;
+   background:#007AF3;
+   padding:1em;
+   border-radius: 1em;
+}
+
+/* --------Prevent Section---------- */
+
+.prevent{
+    background: white; 
+}
+.prevent h1{
+    position:relative;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 1.5em;
+    color: #007AF3;
+    margin:0em 1em;
+}
+.prevent .para3{
+    display: none;
+}
+.prevent h1 span{
+    color: lightseagreen;
+}
+
+.prevent .box-container{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.prevent .box-container .box{
+background:#fff;
+border:.1rem solid rgba(0,0,0,.1);
+padding:1em;
+margin:4em 2em 1em 2em;
+border-radius: .5rem;
+box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+text-align: center;
+}
+
+.prevent .box-container .box img{
+height: 7em;
+width:7em;
+}
+
+.prevent .box-container .box h3{
+font-size: 1.2em;
+color: #007AF3;
+padding-top:1em;
+}
+
+.prevent .box-container .box p{
+font-size: .8em;
+font-weight: 500;
+color: slategray;
+margin: 1em 3.5em;
+}
+
+.prevent .box-container .box:hover{
+transform:translateY(-1rem);
+} 
+
+.prevent .box-container .box .btn{
+color:white;
+font-size: 1em;
+background: #007AF3;
+margin:1em 4em;
+border-radius: 5px;
+}
+
+
+/* --------Map Section-------- */
+.map{
+    min-height: 80%;
+    margin-bottom: 0;
+}
+.map h1{
+    position:relative;
+    text-align: center;
+    padding-top: 6rem;
+    padding-left: .5em;
+    padding-right: .5em;
+    font-size: 1.5em;
+    color: #007AF3;
+}
+.map h1 span{
+    color: lightseagreen;
+}
+.map img{
+    display: block;
+    margin: 3em auto;
+    width:100%;
+}
+.map p{
+    color: #007AF3;
+    font-size: .9em;
+    font-weight: bold;
+    text-align: center;
+    margin: 1em 2em;
+    
+}
+.map p span{
+    color: lightseagreen;
+}
+.map .btn{
+    color:white;
+    background: #007AF3;
+    text-align: center;
+    width: 20%;
+    display: block;
+    font-size: .9em;
+    margin: 1em auto 0em auto;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+.faq{
+    min-height: 90%;
+}
+.accordian h1{
+   display: none;
+}
+.accordian{ 
+    margin-right: 0;
+    max-width: 500px;
+}
+.accordian .contentBx{
+    position: relative;
+    margin: 10px 30px;
+}
+.accordian .contentBx .label{
+    position: relative;
+    font-size: .8em;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 35px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    background:#007AF3;
+    color: white;
+    cursor: pointer;
+}
+
+.accordian .contentBx .label::before{
+    content: '+';
+    position: absolute;
+    top:50%;
+    right: 20px;
+    transform:translateY(-50%);
+    font-size: 1.3em;
+
+}
+
+.accordian .contentBx.active .label::before{
+    content: '-';
+}
+.accordian .contentBx .info{
+    position:relative;
+    background:white;
+    height:0;
+    font-size: .8em;
+    color: #007AF3;
+    font-weight: bold;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+.accordian .contentBx.active .info{
+    height: 150px;
+    padding:10px;
+}
+
+.image1 img{
+    width: 95%;
+    padding-top: 0em;
+}
+.faq .image img{
+    display: none;
+}
+
+
+.footer{
+    min-height: 100%;
+    padding-top: 0;
+    background:#007AF3;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    
+}
+
+.footer .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ .footer .box-container .box{
+     
+    flex:1 1 9em;
+    margin-top:2em;
+    margin-right: 0;
+    margin-left: 1em;
+} 
+
+.footer .box-container .box h3{
+    font-size: 1em;
+    color:#fff;
+    padding-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.footer .box-container .box p{
+    font-size: .8em;
+    font-weight: normal;
+    color: white;
+    padding-top:.9em;
+    padding-right: .5em;
+}
+
+.footer .box-container .box p i{
+    padding-right: 1em;
+    color: white;
+}
+
+.footer .box-container .box a{
+    text-align: center;
+    font-size: .8em;
+    font-weight: bold;
+    color: white;
+    padding:.5em;
+    display: block;
+    width: 50%
+}
+
+
+.footer .box-container .box a:hover{
+    color:white;
+}
+
+
+
+}
+
+
+
+
+/* Media Query for Desktop view */
+
+@media screen and (min-width: 768px) {
+    
+    .mobile-menu, .mobile-menu-exit{
+        display: none;
+    }
+   
+    .navbar{
+        background: #007AF3;
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+    }
+    .container .logo{
+        font-size: 1.6em;
+        font-weight: bold;
+        color: white;
+        text-decoration: none; 
+          
+    }
+    .container .shield{
+    
+        font-weight: bold;
+        color: lightseagreen;
+        text-decoration: none;    
+    }
+    .navbar .container {
+
+        padding: 0 5em;
+        position: relative;
+        display: flex;
+        flex: wrap;
+        justify-content: space-between; 
+        z-index: 999; 
+        
+      }
+      .navbar nav {
+        position: sticky; 
+        display: flex;
+        background: none;
+        height: auto;
+        width: 100%;
+       
+      }
+      .navbar nav ul {
+        display: flex;
+        list-style-type: none;
+        flex-direction: right;
+        padding-left: 50%;
+      }
+      .navbar nav ul a {
+        
+        display: flex;
+        text-decoration: none;  
+        color: white;
+        font-size: 1em;
+        padding: .1em 1em;
+        font-weight: 600;  
+      }
+     
+       .navbar nav ul a:hover{
+          color:white;
+          font-weight: bold;
+      } 
+      .navbar nav ul.nav1 {
+        margin: 0;
+      }
+
+      /* -----------Hero Section------------ */
+
+    section{  
+          min-height: 100vh;
+          margin-bottom: 3em;
+          width: 100vw;
+      }
+    .hero-section{
+        background:#007AF3;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;   
+    }
+    .content {
+        position: relative;
+        margin-left: 7em;
+
+    }
+    .content h1{
+        font-weight: bold;
+        font-size: 3em;
+        color: white;
+    }
+    .content h1 span{
+        color: lightseagreen;
+    }
+    .content .paragraph{
+        color:white;
+        font-size: .9em;
+        padding-top: .5em;
+    }
+    .content .paragraph2{
+        display:none;
+    }
+    .content .btn{
+        color: #007AF3;
+        background: white;
+        margin: 1.5em 0em;
+        float: left;
+        font-size: 1em;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    
+    .hero-section .image{
+        flex: 1 1 40rem;
+    }
+    .hero-section .image img{
+        width: 70%;
+        margin-top: 0em;
+        margin-bottom: -4em;
+        margin-left: 5em;
+    }
+    
+    
+
+    /* --------Symptoms Section---------- */
+
+    .symptom{
+        background: white;
+        display:flex;
+        flex: wrap;
+    }
+
+    .symptom  img{
+        width: 46%;  
+    }
+    .symptom .details{
+        margin-top: 1.9rem ;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    .symptom .details h1{
+        margin-top: 1em;
+        font-weight: bold;
+        color: #007AF3;
+        font-size: 2.1em;
+        margin-bottom: 1rem;
+        
+    }
+    .details ul{
+        color: lightseagreen;
+        font-size: 1.3em;
+        padding-top: 0em;
+        padding-bottom: 1em;
+        font-weight: bold;
+    }
+    .details img{
+        display: none;
+    }
+    .details li{
+        color: #007AF3;
+        font-weight: 600;
+    }    
+    .details span{
+        color: lightseagreen;
+    }
+    .details .para1{
+        padding-top: .5em;
+        color: #007AF3;
+        font-weight: 600;
+        padding-right: 4.5em;
+    }
+
+    /* -------Prevent Section---------- */
+
+    .prevent{
+        background: white;
+    }
+    .prevent h1{
+        position:relative;
+        text-align: center;
+        padding-top: 3.5rem;
+        font-size: 2.5em;
+        color: #007AF3;
+    }
+    .prevent h1 span{
+        color: lightseagreen;
+    }
+    .prevent p{
+        font-size: 15px;
+        padding-top: .5em;
+        text-align: center;
+        margin-left: 25%;
+        margin-right: 25%;
+        font-weight: 450;
+        color: darkslategray
+    }
+
+
+ .prevent .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.prevent .box-container .box{
+    background:#fff;
+    border:.1rem solid rgba(0,0,0,.1);
+    padding:1em;
+    margin:2.5em 2em;
+    width:20%;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    text-align: center;
+}
+
+.prevent .box-container .box img{
+    height: 7em;
+    width:7em;
+}
+
+.prevent .box-container .box h3{
+    font-size: 1.2em;
+    color: #007AF3;
+    padding-top:1em;
+}
+
+.prevent .box-container .box p{
+    font-size: .9em;
+    color:darkslategray;
+    margin: 1em 1.5em;
+}
+
+.prevent .box-container .box:hover{
+    transform:translateY(-1rem);
+} 
+
+.prevent .box-container .box .btn{
+    color:white;
+    font-size: 1em;
+    background: #007AF3;
+    margin:1em 4em;
+    border-radius: 5px;
+}
+
+/* -------------Map Section--------- */
+
+.map h1{
+    position:relative;
+    text-align: center;
+    padding-top: 4rem;
+    margin-bottom: 2em;
+    font-size: 2.5em;
+    color: #007AF3;
+}
+.map h1 span{
+    color: lightseagreen;
+}
+.map img{
+    display: block;
+    margin: 3em auto;
+}
+.map p{
+    color: #007AF3;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    margin: 1em 5em 0em 5em;
+    
+}
+.map p span{
+    color: lightseagreen;
+}
+.map .btn{
+    color:white;
+    background: #007AF3;
+    text-align: center;
+    width: 8%;
+    display: block;
+    margin: 1em auto;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* -------FAQ Section----------- */
+
+.faq{
+    display:flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+}
+.faq h1{
+    text-align: center;
+    color: #007AF3;
+    font-size: 2.1em;
+    margin-bottom: 1em;
+    margin-left: .4em;
+}
+.accordian{ 
+    margin-top: 7em;
+    margin-left: 2em;
+    margin-right: 0;
+    max-width: 600px;
+}
+.accordian .contentBx{
+    position: relative;
+    margin: 10px 20px;
+}
+.accordian .contentBx .label{
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    background:#007AF3;
+    color: white;
+    cursor: pointer;
+}
+.accordian .contentBx .label::before{
+    content: '+';
+    position: absolute;
+    top:50%;
+    right: 20px;
+    transform:translateY(-50%);
+    font-size: 1em;
+}
+
+.accordian .contentBx.active .label::before{
+    content: '-';
+}
+.accordian .contentBx .info{
+    position:relative;
+    background:white;
+    height:0;
+    color: #007AF3;
+    font-weight: bold;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+.accordian .contentBx.active .info{
+    height: 150px;
+    padding:10px;
+}
+.faq .image1{
+    display: none;
+}
+.faq .image{
+   flex: 1 1 40rem;
+}
+.faq .image img{
+    width: 90%;
+    margin-top: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------Footer Section------------ */
+.footer{
+    min-height: 100%;
+    padding-top: 0;
+    background:#007AF3;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    
+}
+
+.footer .box-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ .footer .box-container .box{
+     
+    flex:1 1 9em;
+    margin-top:2em;
+    margin-right: 0;
+    margin-left: 7em;
+} 
+
+.footer .box-container .box h3{
+    font-size: 1.5em;
+    color:#fff;
+    padding-bottom: 0.5em;
+    font-weight: bold;
+}
+
+.footer .box-container .box p{
+    font-size: 1em;
+    font-weight: normal;
+    color: white;
+    padding-top:.9em;
+    padding-right: 0em;
+}
+
+.footer .box-container .box p i{
+    padding-right: 1em;
+    color: white;
+}
+
+.footer .box-container .box a{
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    padding:.5em 2em;
+    display: block;
+    width: 12%
+}
+
+
+.footer .box-container .box a:hover{
+    color:white;
+}
+
+
+}
+
